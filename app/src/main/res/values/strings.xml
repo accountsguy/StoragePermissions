@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">StoragePermissions</string>
+    <string name="question1">Question 1. What is the difference between Internal Storage and
+        External Storage?</string>
+    <string name="answer1">Answer 1: Andorid OS has divided the storage area of the device into
+        Internal and External Storage. Internal Storage resides in the device itself where as the
+        External Store is a detachable from the device like SD Card. Internal Storage is
+        more secure than External Storage.</string>
+    <string name="question2">Question 2. For how long the data resides in the cache?</string>
+    <string name="answer2">Answer 2: Files in the cache are resides untill the user eitehr
+        clears the cache or uninstalls the applicaion.</string>
+    <string name="question3">Question 3.What are the Critical Permissions and Normal Permissions?
+        What are the examples of each?</string>
+    <string name="dangerous_permission">Answer 3:  Dangerous or Critical permissions cover areas
+        where the
+        app wants data or resources that involve the users private information, or could
+        potentially affect the users stored data or the operation of other apps. For example, the ability to read the user's contacts is a dangerous permission. If an app declares that it needs a dangerous permission, the user has to explicitly grant the permission to the app. Until the user approves the permission, your app cannot provide functionality that depends on that permission.
+    Eg. READ_CONTACTS</string>
+    <string name="normal_permission">Normal permissions cover areas where your app needs to
+        access data or resources outside the app sandbox, but where there very little risk to the
+        user privacy or the operation of other apps. For example, permission to set the time zone is a normal permission. If an app declares in its manifest that it needs a normal permission, the system automatically grants the app that permission at install time. The system doesn\'t prompt the user to grant normal permissions, and users cannot revoke these permissions.
+    Eg., ACCESS_NETWORK_STATE</string>
+</resources>

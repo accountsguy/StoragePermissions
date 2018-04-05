@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="accountsguy.net.storagepermissions.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question1"
+        android:textColor="@android:color/holo_red_light"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:textColor="@android:color/holo_blue_dark"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/answer1"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/writetostorage"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp"
+
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Write and Save File in "
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/writetostorage"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter String to store in File"
+                />
+            <Button
+                android:id="@+id/writeinteralstorage_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store in Internal Storage"
+                android:layout_below="@+id/writetostorage"
+                />
+            <Button
+                android:id="@+id/writeexteralstorage_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store in External Storage"
+                android:layout_toRightOf="@+id/writeinteralstorage_button"
+                android:layout_below="@+id/writetostorage"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/holo_red_light"></View>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/readfromstorage"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Read Data from "
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/readfromstorage"
+            android:gravity="center">
+            <Button
+                android:id="@+id/readinteralstorage_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Internal Storage"
+                />
+            <Button
+                android:id="@+id/readexteralstorage_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="External Storage"
+                />
+            <TextView
+                android:id="@+id/showdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/holo_red_light"></View>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question2"
+        android:textColor="@android:color/holo_red_light"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:textColor="@android:color/holo_blue_dark"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/answer2"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/readfrom"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/cacheEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter String to store in Cache"/>
+            <Button
+                android:id="@+id/writecache_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write to Cache"
+                />
+            <!--<Button-->
+                <!--android:id="@+id/readcache_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Read from Cache"-->
+                <!--/>-->
+            <TextView
+                android:id="@+id/showcachedata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/holo_red_light"></View>
+
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question3"
+        android:textColor="@android:color/holo_red_light"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:textColor="@android:color/holo_blue_dark"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dangerous_permission"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+    <Button
+        android:id="@+id/contacts_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Give Permission for Contacts"/>
+
+    <TextView
+        android:textColor="@android:color/holo_blue_dark"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/normal_permission"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/internet_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Internet Permission"/>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/holo_red_light"></View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/holo_red_light"></View>
+
+    <RelativeLayout
+        android:id="@+id/classdemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+</LinearLayout>
+
+</ScrollView>
